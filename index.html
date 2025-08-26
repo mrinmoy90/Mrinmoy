@@ -1,0 +1,309 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrinmoy Barman - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Mrinmoy Barman</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#study-materials" class="nav-link">Study Materials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <div class="profile-image">
+                    <img src="/images/IMG_20250122_091933_958.jpg" alt="Mrinmoy" id="profile-img" width="200" class="profile-pic" >
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">Welcome, I'm <span class="highlight">Mrinmoy Barman</span></h1>
+                <p class="hero-subtitle">This website is a place where I share a little about myself, my study materials, and the projects I’m working on.</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-item">
+                        <h3><i class="fas fa-user"></i> Introduction</h3>
+                        <p>Hello! I’m Mrinmoy Barman , a BSc (Computer Science) student with a passion for technology, creativity, and self-growth.
+
+I enjoy learning about web development, design, and computer science concepts, and I love turning ideas into something real — whether it’s a project, a website. <br> HSLC - Dhumerghat High School <br> Hs - PDUAM (Pandit Deen Dayal Upadhaya Mahavidyalaya amjonga)<br> B.Sc. - PDUAM</p>
+                    </div>
+                    <div class="about-item">
+                        <h3><i class="fas fa-heart"></i> Hobbies & Interests</h3>
+                        <ul class="hobbies-list">
+                            <li><i class="fas fa-code"></i> Programming & Software Development</li>
+                            <li><i class="fas fa-book"></i> Reading Technical Books & Articles</li>
+                            <li><i class="fas fa-gamepad"></i> Gaming & video editing</li>
+                            <li><i class="fas fa-camera"></i> Photo / video graphy & Digital Art</li>
+                            <li><i class="fas fa-music"></i> Music & guitar</li>
+                            <li><i class="fas fa-hiking"></i> Outdoor Activities & Adventure</li>
+                        </ul>
+                    </div>
+                    <div class="about-item">
+                        <h3><i class="fas fa-target"></i> Career Goals</h3>
+                        <p>My career aspirations center around becoming a well-rounded software engineer who can contribute meaningfully to innovative projects. I aim to specialize in full-stack development while maintaining a strong foundation in emerging technologies like AI and machine learning. I'm particularly interested in creating applications that solve real-world problems and improve people's lives.</p>
+                        <div class="goals-list">
+                            <div class="goal-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Master modern web development frameworks</span>
+                            </div>
+                            <div class="goal-item">
+                                <i class="fas fa-brain"></i>
+                                <span>Develop expertise in AI and machine learning</span>
+                            </div>
+                            <div class="goal-item">
+                                <i class="fas fa-users"></i>
+                                <span>Lead and mentor development teams</span>
+                            </div>
+                            <div class="goal-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Contribute to open-source projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Materials Section -->
+    <section id="study-materials" class="study-materials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Study Materials</h2>
+                <p class="section-subtitle">Resources and materials for learning</p>
+            </div>
+            <div class="materials-grid">
+                <div class="material-category">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="material-list">
+                        <div class="material-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="material-info">
+                                <h4>JavaScript Fundamentals Guide</h4>
+                                <p>Comprehensive guide covering ES6+ features and best practices</p>
+                                <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="material-item">
+                            <i class="fas fa-file-code"></i>
+                            <div class="material-info">
+                                <h4>React.js Study Notes</h4>
+                                <p>Personal notes and examples from React learning journey</p>
+                                <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="material-item">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="material-info">
+                                <h4>Data Structures & Algorithms</h4>
+                                <p>Implementation examples and complexity analysis</p>
+                                <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="material-category">
+                    <div class="category-header">
+                        <i class="fas fa-palette"></i>
+                        <h3>Design</h3>
+                    </div>
+                    <div class="material-list">
+                        <div class="material-item">
+                            <i class="fas fa-file-image"></i>
+                            <div class="material-info">
+                                <h4>UI/UX Design Principles</h4>
+                                <p>Collection of design patterns and user experience guidelines</p>
+                                <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="material-item">
+                            <i class="fas fa-file-powerpoint"></i>
+                            <div class="material-info">
+                                <h4>Color Theory Workshop</h4>
+                                <p>Study materials from design workshops and courses</p>
+                                <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="material-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Science</h3>
+                    </div>
+                    <div class="material-list">
+                        <div class="material-item">
+                            <i class="fas fa-file-csv"></i>
+                            <div class="material-info">
+                                <h4>Machine Learning Datasets</h4>
+                                <p>Curated datasets for practice and experimentation</p>
+                                <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="material-item">
+                            <i class="fas fa-file-code"></i>
+                            <div class="material-info">
+                                <h4>Python Data Analysis Scripts</h4>
+                                <p>Collection of Python scripts for data manipulation and visualization</p>
+                                <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="upload-section">
+                <h3><i class="fas fa-cloud-upload-alt"></i> Upload New Material</h3>
+                <p>Add new study materials to your collection</p>
+                <div class="upload-form">
+                    <input type="file" id="file-upload" class="file-input" multiple>
+                    <label for="file-upload" class="upload-btn">
+                        <i class="fas fa-plus"></i> Choose Files
+                    </label>
+                    <span class="file-info">No files selected</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's connect and collaborate</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                        <div class="form-message" id="form-message"></div>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Connect with me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourusername" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://twitter.com/yourusername" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="mailto:your.email@example.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://instagram.com/yourusername" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://dribbble.com/yourusername" class="social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-dribbble"></i>
+                            <span>Dribbble</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>assam , INDIA</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9365350348</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Available Mon-set, 9AM-6PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Mrinmoy Barman. All rights reserved.</p>
+                <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
