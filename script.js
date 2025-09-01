@@ -38,6 +38,7 @@ function initializeNavigation() {
         }
     });
 
+
     // Active link highlighting
     const sections = document.querySelectorAll('section[id]');
     
@@ -98,6 +99,19 @@ function initializeSmoothScrolling() {
             }
         });
     });
+}
+
+
+// Contact form submission using EmailJS
+
+   function sendmail() {
+   let parms = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+   }
+    emailjs.send("service_mkzs1uo","template_evrbiu7",parms).then(alart("email sent..."))
 }
 
 // Form Validation
@@ -396,38 +410,7 @@ function initializeAnimations() {
     }
 }
 
-// Material link functionality
-document.addEventListener('click', function(e) {
-    if (e.target.matches('.material-link') || e.target.closest('.material-link')) {
-        e.preventDefault();
-        
-        // Show a message since these are placeholder links
-        const message = document.createElement('div');
-        message.style.cssText = `
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: var(--primary-color);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 0.5rem;
-            z-index: 10000;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            animation: fadeInUp 0.3s ease-out;
-        `;
-        message.textContent = 'This is a placeholder link. Replace with your actual study material links.';
-        
-        document.body.appendChild(message);
-        
-        setTimeout(() => {
-            message.style.animation = 'fadeOut 0.3s ease-out forwards';
-            setTimeout(() => {
-                document.body.removeChild(message);
-            }, 300);
-        }, 2000);
-    }
-});
+
 
 // Add fadeOut animation
 const fadeOutStyle = document.createElement('style');
