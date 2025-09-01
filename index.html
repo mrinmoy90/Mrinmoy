@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "YeT5yh5kea-RrYEM2",
+      });
+   })();
+</script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -35,7 +48,7 @@
         <div class="hero-content">
             <div class="profile-image-container">
                 <div class="profile-image">
-                    <img src="IMG_20250122_091933_958.jpg" alt="Mrinmoy" id="profile-img" width="200" class="profile-pic" >
+                    <img src="images/Mrinmoy profile.jpg" alt="Mrinmoy" id="profile-img" width="200" class="profile-pic" >
                 </div>
             </div>
             <div class="hero-text">
@@ -122,23 +135,23 @@ I enjoy learning about web development, design, and computer science concepts, a
                         <div class="material-item">
                             <i class="fas fa-file-pdf"></i>
                             <div class="material-info">
-                                <h4>JavaScript Fundamentals Guide</h4>
-                                <p>Comprehensive guide covering ES6+ features and best practices</p>
+                                <h4>WEB DEV</h4>
+                                <p>Comprehensive guide covering HTML, CSS, JAVASCRIPT with ai features and best practices</p>
                                 <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <div class="material-item">
                             <i class="fas fa-file-code"></i>
                             <div class="material-info">
-                                <h4>React.js Study Notes</h4>
-                                <p>Personal notes and examples from React learning journey</p>
+                                <h4>C & C++</h4>
+                                <p>Personal notes and examples from learning journey</p>
                                 <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <div class="material-item">
                             <i class="fas fa-file-alt"></i>
                             <div class="material-info">
-                                <h4>Data Structures & Algorithms</h4>
+                                <h4>Data Structures</h4>
                                 <p>Implementation examples and complexity analysis</p>
                                 <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
                             </div>
@@ -156,7 +169,7 @@ I enjoy learning about web development, design, and computer science concepts, a
                             <i class="fas fa-file-image"></i>
                             <div class="material-info">
                                 <h4>UI/UX Design Principles</h4>
-                                <p>Collection of design patterns and user experience guidelines</p>
+                                <p>Canva Tutorial and Collection of design patterns and user experience guidelines</p>
                                 <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -174,22 +187,30 @@ I enjoy learning about web development, design, and computer science concepts, a
                 <div class="material-category">
                     <div class="category-header">
                         <i class="fas fa-database"></i>
-                        <h3>Data Science</h3>
+                        <h3>B.Sc. notes</h3>
                     </div>
                     <div class="material-list">
                         <div class="material-item">
                             <i class="fas fa-file-csv"></i>
                             <div class="material-info">
-                                <h4>Machine Learning Datasets</h4>
-                                <p>Curated datasets for practice and experimentation</p>
+                                <h4>Computer Science</h4>
+                                <p>All MAJOR & minor Class notes , question and Some practical programs</p>
+                                <a href="https://drive.google.com/drive/folders/1Rt5eqndZ7lyV-1-vU4Id5EZ9T90QbuZ2?usp=sharing" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="material-item">
+                            <i class="fas fa-file-code"></i>
+                            <div class="material-info">
+                                <h4>Maths</h4>
+                                <p>Maths topics & problems</p>
                                 <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                         <div class="material-item">
                             <i class="fas fa-file-code"></i>
                             <div class="material-info">
-                                <h4>Python Data Analysis Scripts</h4>
-                                <p>Collection of Python scripts for data manipulation and visualization</p>
+                                <h4>All other Subjects Notes </h4>
+                                <p>SCE(Database Management System), MDC(chemical & physical Science), VAC</p>
                                 <a href="#" class="material-link">View Material <i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
@@ -197,17 +218,6 @@ I enjoy learning about web development, design, and computer science concepts, a
                 </div>
             </div>
             
-            <div class="upload-section">
-                <h3><i class="fas fa-cloud-upload-alt"></i> Upload New Material</h3>
-                <p>Add new study materials to your collection</p>
-                <div class="upload-form">
-                    <input type="file" id="file-upload" class="file-input" multiple>
-                    <label for="file-upload" class="upload-btn">
-                        <i class="fas fa-plus"></i> Choose Files
-                    </label>
-                    <span class="file-info">No files selected</span>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -232,11 +242,16 @@ I enjoy learning about web development, design, and computer science concepts, a
                             <span class="error-message" id="email-error"></span>
                         </div>
                         <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>  
+                        <div class="form-group">
                             <label for="message">Message *</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                             <span class="error-message" id="message-error"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary submit-btn">
+                        <button type="submit" onclick ="sendmail()" class="btn btn-primary submit-btn">
                             <span class="btn-text">Send Message</span>
                             <span class="btn-loading" style="display: none;">
                                 <i class="fas fa-spinner fa-spin"></i> Sending...
@@ -257,11 +272,11 @@ I enjoy learning about web development, design, and computer science concepts, a
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn</span>
                         </a>
-                        <a href="mr.mrinmoy48@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                            <span>Email</span>
+                        <a href="https://www.facebook.com/sangkar.barman.714" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                            <span>facebook</span>
                         </a>
-                        <a href="https://instagram.com/yourusername" class="social-link" target="_blank" rel="noopener">
+                        <a href="https://instagram.com/mrinmoy._barman" class="social-link" target="_blank" rel="noopener">
                             <i class="fab fa-instagram"></i>
                             <span>Instagram</span>
                         </a>
@@ -295,12 +310,10 @@ I enjoy learning about web development, design, and computer science concepts, a
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2025 Mrinmoy Barman. All rights reserved.</p>
-                <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+                <p>Built with using HTML, CSS, and JavaScript</p>
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
 
